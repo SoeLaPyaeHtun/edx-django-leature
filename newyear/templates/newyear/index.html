@@ -1,5 +1,12 @@
-<title>is it newyear?</title>
+{% load static %}
 
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<title>is it newyear?</title>
+<link href="{% static 'newyear/style.css' %}" rel='stylesheet'>
+</head>
+<body>
 
  {% if newyear %}
  <h1>YES</h1>
@@ -7,3 +14,4 @@
  
 <h1>NO</h1>
  {% endif %}
+</body>
